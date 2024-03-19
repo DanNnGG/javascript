@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 009</title>
+
+    <style>
+        body{
+            margin-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        body > h1{
+            background: rgba(82, 82, 190, 0.332);
+            box-shadow: 1px 1px 12px 1px rgba(38, 0, 251, 0.563);
+            border-radius: 20px;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Onde você mora?</h1>
+    País: <input type="text" name="txtvel" id="txt01"> 
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="res">Resultado</div>
+
+    <script>
+        var txtv = window.document.querySelector('input#txt01')
+        var res = window.document.querySelector('div#res')
+
+        function calcular(){
+            var país = (txtv.value)
+            res.innerHTML = `Você mora no(a) <strong>${país} </strong>`
+
+            if (país != 'Brasil') {
+                res.innerHTML += `<p> Você é estrangeiro</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            }
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
