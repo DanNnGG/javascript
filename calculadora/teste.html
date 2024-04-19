@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>TESTE</h1>
+
+    <section>
+        <div class="main">
+            <form action="" name="Calculator">
+
+                <input type="text" class="txtmaincolor" name="text1" disabled>
+
+                <input type="button" class="txt maincolor" name="text12" value="C" onclick="location.reload()"> <br>
+
+                <input type="button" class="num maincolor" value="7" name="btn7" onclick="displaynum(btn7.value)">
+
+                <input type="button" class="num maincolor" value="8" name="btn8" onclick="displaynum(btn8.value)">
+
+                <input type="button" class="num maincolor" value="9" name="btn9" onclick="displaynum(btn9.value)">
+
+                <input type="button" class="num blue" value="+" name="addbtn" onclick="displaynum(addbtn.value)"> <br>
+
+                <!-- ======================================= -->
+                
+                <input type="button" class="num maincolor" value="4" name="btn4" onclick="displaynum(btn4.value)">
+
+                <input type="button" class="num maincolor" value="5" name="btn5" onclick="displaynum(btn5.value)">
+
+                <input type="button" class="num maincolor" value="6" name="btn6" onclick="displaynum(btn6.value)">
+
+                <input type="button" class="num pin" value="-" name="subbtn" onclick="displaynum(subbtn.value)"> <br>
+
+                <!-- ======================================= -->
+
+                <input type="button" class="num maincolor" value="1" name="btn1" onclick="displaynum(btn1.value)">
+
+                <input type="button" class="num maincolor" value="2" name="btn2" onclick="displaynum(btn2.value)">
+
+                <input type="button" class="num maincolor" value="3" name="btn3" onclick="displaynum(btn3.value)">
+
+                <input type="button" class="num green" value="*" name="mulbtn" onclick="displaynum(mulbtn.value)"> <br>
+
+                <!-- ======================================= -->
+
+                <input type="button" class="num maincolor" value="." name="btn." onclick="displaynum(dot.value)">
+
+                <input type="button" class="num_maincolor" value="0" name="btn0" onclick="displaynum(btn0.value)">
+
+                <input type="button" class="num_maincolor" value="=" name="btn=" onclick="text1.value=eval(text1.value)">
+
+                <input type="button" class="num oran" value="/" name="divbtn" onclick="displaynum(divbtn.value)"> <br>
+            </form>
+        </div>
+
+
+
+    </section>
+    <script src="teste.js"></script>
+</body>
+</html>
